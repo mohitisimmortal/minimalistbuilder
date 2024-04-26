@@ -18,7 +18,7 @@ const Header = () => {
 
     return (
         <>
-            <div className='fixed w-screen top-0'>
+            <div className='fixed w-screen top-0 bg-[#101010]'>
                 <div className='items-center px-4 py-4 md:px-8 md:py-4 xl:px-10 text-white flex justify-between'>
                     <div className="logo text-gray-400 text-sm md:text-lg xl:text-xl">
                         <Link href={'/'}>
