@@ -18,7 +18,7 @@ export function DropdownMenuDemo() {
       <DropdownMenuContent className="xl:flex xl:gap-2">
         <DropdownMenuItem onSelect={() => { router.push('/') }} className="cursor-pointer"><FilePlusIcon className="xl:mr-1" /> New webapp</DropdownMenuItem>
         <DropdownMenuItem onSelect={() => { router.push('/canvas') }} className="cursor-pointer"><BoxModelIcon className="xl:mr-1" /> Canvas</DropdownMenuItem>
-        <DropdownMenuItem onSelect={() => signOut()} className="cursor-pointer">Sign out</DropdownMenuItem>
+        <DropdownMenuItem onSelect={() => signOut({callbackUrl:'/'})} className="cursor-pointer">Sign out</DropdownMenuItem>
       </DropdownMenuContent>
     </DropdownMenu>
   );

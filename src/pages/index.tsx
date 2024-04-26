@@ -13,7 +13,7 @@ export default function Home() {
     if (auth) {
       router.push('/canvas');
     } else {
-      signIn('google');
+      signIn('google',{callbackUrl:'/canvas'});
     }
   };
 
